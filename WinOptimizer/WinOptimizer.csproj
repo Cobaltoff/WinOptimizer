@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<RootNamespace>WinOptimizer</RootNamespace>
+		<AssemblyName>WinOptimizer</AssemblyName>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<IncludeAllContentInSingleFile>true</IncludeAllContentInSingleFile>
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+		<PublishTrimmed>false</PublishTrimmed>
+		<ApplicationIcon>optimization.ico</ApplicationIcon>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Content Include="optimization.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="WPF-UI" Version="4.3.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.7" />
+		<PackageReference Include="System.Management" Version="10.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Views\Controls\" />
+	  <Folder Include="Views\Pages\" />
+	</ItemGroup>
+
+</Project>
